@@ -1,0 +1,56 @@
+.card1 {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.btn1 {
+    width: 50%;
+    height: 100px;
+    background-color: #a4a4a4;
+    border: none;
+}
+
+.base {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    align-items: flex-end;
+}
+
+.nome {
+    width: 100%;
+    padding: 20px;
+}
+
+.pokemon {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 50%;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon img {
+    max-width: 400px;
+}
+
+.info{
+    background-color: #30a7d7;
+    border-radius: 15px;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

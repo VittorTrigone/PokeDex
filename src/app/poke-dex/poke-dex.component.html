@@ -1,0 +1,42 @@
+
+    
+    <div class="container1">
+        <div class="card1 bg-light">
+
+            <div class="mt-3 mb-3">
+                <div class="d-flex justify-content-center align-items-center">
+                  <button class="btn1" (click)="prevPokemon()">Anterior Nº({{pokemonId - 1}})</button>
+                  <button class="btn1" style="margin-left: 3px;" (click)="nextPokemon()">Próximo Nº({{pokemonId + 1}})</button>
+                </div>
+              </div>
+
+
+
+
+
+          <div class="nome">
+            <div class="col-12">
+              <h1 class="text-center mb-3">{{ pokemon?.name | titlecase }} Nº({{pokemon?.id}})</h1>
+            </div>
+          </div>
+        
+          <div class="base">
+            <div class="pokemon">
+                <img [src]="getImg()" class="" alt="{{ pokemon?.name }}">
+            </div>
+            <div class="info">
+                <div class="">
+                  <p class=""><strong>Altura:</strong> {{  formatHeight(pokemon?.height) }}</p>
+                  <p class=""><strong>Peso:</strong> {{  formatWeight(pokemon?.weight) }}</p>
+                  <p class=""><strong>Tipo:</strong> {{ pokemon?.types[0]?.type?.name}}</p>
+                  <p class=""><strong>HP: </strong>{{ pokemon?.stats[0]?.base_stat }}</p>
+                </div>
+              </div>
+            
+          </div>
+        
+
+
+
+          </div>
+        </div>
